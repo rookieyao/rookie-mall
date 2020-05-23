@@ -1,0 +1,17 @@
+server:
+  port: 8201
+spring:
+  application:
+    name: mall-gateway
+#  profiles:
+#    active: dev
+  cloud:
+    gateway:
+      nacos:
+        discovery:
+          server-addr: localhost:8848 #≈‰÷√Nacosµÿ÷∑
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

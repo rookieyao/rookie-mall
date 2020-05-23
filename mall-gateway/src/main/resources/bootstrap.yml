@@ -1,0 +1,25 @@
+server:
+  port: 9101
+test:
+  nacos:
+    namespace: a4dbaa04-04fe-48bc-80b8-58360e508b54
+    group: bo
+    server-addr: localhost:8848
+
+spring:
+  application:
+    name: biz-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${test.nacos.server-addr}
+        namespace: ${test.nacos.namespace}
+      config:
+        file-extension: yaml
+        server-addr: ${test.nacos.server-addr}
+        namespace: ${test.nacos.namespace}
+        group: ${test.nacos.group}
+        ext-config:
+          - data-id: basic-common.yaml
+            group: ${test.nacos.group}
+            refresh: true
