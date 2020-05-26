@@ -64,7 +64,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <!-- https://blog.csdn.net/zhagzheguo/article/details/81942275 -->
     <dependencyManagement>
         <dependencies>
             <!--Spring Cloud 相关依赖-->

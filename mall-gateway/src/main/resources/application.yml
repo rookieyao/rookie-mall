@@ -1,14 +1,12 @@
 server:
-  port: 8201
+  port: 8082
 spring:
   application:
-    name: mall-gateway
-  #  profiles:
-  #    active: dev
+    name: rookie-mall-gateway
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848
+        server-addr: localhost:8848 #配置Nacos地址
 management:
   endpoints:
     web:
