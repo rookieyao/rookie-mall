@@ -3,13 +3,12 @@ server:
 spring:
   application:
     name: mall-gateway
-#  profiles:
-#    active: dev
+  #  profiles:
+  #    active: dev
   cloud:
-    gateway:
-      nacos:
-        discovery:
-          server-addr: localhost:8848 #≈‰÷√Nacosµÿ÷∑
+    nacos:
+      discovery:
+        server-addr: localhost:8848
 management:
   endpoints:
     web:
